@@ -2,15 +2,12 @@
 /*Functions*/
 int menu();
 int credits();
-/*Variaveis logicas*/
-int creditmode=-1, varmenu=0,  mode=-1;
+/*Basic global var*/
 int test=0;
 /*Main function*/ 
 int main(void){
     while(test==0){
     printf("===========DeltaX First Menu===========\n");
-    mode=-1;
-    creditmode=-1;
     menu();
     }
 return(0);
@@ -18,7 +15,11 @@ return(0);
 
 /*Menu logic, it's a function*/
 int menu(void){
-   while(varmenu!=1){
+/*Variaveis logicas*/
+    int varmenu=0;
+    int mode=-1;
+/*Loop que faz o menu todo funcionar*/
+    while(varmenu!=1){
     printf("(0)Iniciar\n(1)Creditos\n(2)Sair\n");
     scanf("%d",&mode);
     switch(mode){
@@ -31,16 +32,15 @@ int menu(void){
         case 2:
             printf("O usuario escolheu sair\n");
             test=1;
-            break;
         }
 break;
     }
 }
 /*Credits logic (also a function)*/
 int credits(){
+  int creditmode=0;
     while(creditmode!=1){
-    printf("\n====Made by Wired God====\n");
-    printf("Press(1) to come back.\n");
+    printf("\n====Made by Wired God====\nPress(1) to come back.\n");
     scanf("%d",&creditmode);
     }
 }
