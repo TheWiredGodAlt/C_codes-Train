@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*Functions*/
+/*Functions Prototypes*/
 int menu();
 int credits();
 /*Basic global var*/
@@ -12,7 +12,6 @@ int main(void){
     }
 return(0);
 }
-
 /*Menu logic, it's a function*/
 int menu(void){
 /*Variaveis logicas*/
