@@ -42,4 +42,5 @@ int credits(){
     printf("\n====Made by Wired God====\nPress(1) to come back.\n");
     scanf("%d",&creditmode);
     }
+return (0);
 }
